@@ -1,0 +1,10 @@
+.build/
+.superpowers/
+.impeccable/
+.DS_Store
+# Build-Artefakte im App-Paket (deploy.sh erzeugt sie)
+Ekko.app/Contents/MacOS/
+Ekko.app/Contents/_CodeSignature/
+Ekko.app/Contents/Resources/mlx.metallib
+Ekko.app/Contents/Resources/Fonts/
+Ekko.app/Contents/Resources/*.lproj

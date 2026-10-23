@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>de</string>
+	<key>CFBundleExecutable</key>
+	<string>Ekko</string>
+	<key>CFBundleIconFile</key>
+	<string>Ekko</string>
+	<key>CFBundleIdentifier</key>
+	<string>de.paul.ekko</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>de</string>
+		<string>en</string>
+	</array>
+	<key>CFBundleName</key>
+	<string>Ekko</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1</string>
+	<key>CFBundleVersion</key>
+	<string>202610231144</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>26.0</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>Ekko fügt den diktierten Text per Tastaturbefehl ein.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Ekko nimmt dein Diktat über das Mikrofon auf.</string>
+	<key>NSScreenCaptureUsageDescription</key>
+	<string>Ekko nimmt in Meetings das System-Audio (Gegenseite) auf.</string>
+</dict>
+</plist>

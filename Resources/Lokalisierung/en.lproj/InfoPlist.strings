@@ -1,0 +1,4 @@
+/* Ekko — Info.plist-Texte (Berechtigungsdialoge) auf Englisch. */
+"NSAppleEventsUsageDescription" = "Ekko inserts the dictated text via a keyboard shortcut.";
+"NSMicrophoneUsageDescription" = "Ekko records your dictation through the microphone.";
+"NSScreenCaptureUsageDescription" = "Ekko records system audio (the other side) in meetings.";

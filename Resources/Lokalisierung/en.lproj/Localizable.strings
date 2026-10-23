@@ -1,0 +1,206 @@
+/* Ekko — englische Oberfläche. Schlüssel = deutscher Quelltext,
+   Platzhalter (%@, %lld, %%) müssen zum Schlüssel passen. */
+
+/* Darstellung · Sprache */
+"System" = "System";
+"Hell" = "Light";
+"Dunkel" = "Dark";
+"Wie System" = "Same as System";
+"Deutsch" = "German";
+
+/* Berechtigungen */
+"Eingabemonitoring" = "Input Monitoring";
+"Bedienungshilfen" = "Accessibility";
+"Mikrofon" = "Microphone";
+"Bildschirmaufnahme" = "Screen Recording";
+"⌥-Hotkey (Diktat auslösen)" = "⌥ hotkey (start dictation)";
+"⌘V-Einfügen" = "⌘V paste";
+"Aufnahme" = "Recording";
+"Meeting-System-Audio" = "Meeting system audio";
+"Ekko braucht diese Freigaben einmalig. Grün = erteilt." = "Ekko needs these permissions once. Green = granted.";
+"Öffnen…" = "Open…";
+
+/* Caption · HUD */
+"● EKKO HÖRT" = "● EKKO IS LISTENING";
+"IN DER ZWISCHENABLAGE · ⌘V" = "ON THE CLIPBOARD · ⌘V";
+"GELERNT · WÖRTERBUCH" = "LEARNED · DICTIONARY";
+"Noch keine Diktate" = "No dictations yet";
+
+/* Cleanup · Stil */
+"Apple (System)" = "Apple (System)";
+"Qwen3-4B (lokal, 2,3 GB)" = "Qwen3-4B (local, 2.3 GB)";
+"Standard (putzen)" = "Standard (clean up)";
+"Förmlich (Mail)" = "Formal (Mail)";
+"Knapp (Chat)" = "Brief (Chat)";
+"Strukturiert (Notizen)" = "Structured (Notes)";
+"Roh (kein Cleanup)" = "Raw (no cleanup)";
+
+/* Fehler */
+"yt-dlp nicht gefunden (brew install yt-dlp)" = "yt-dlp not found (brew install yt-dlp)";
+"keine Audio-Datei erzeugt" = "no audio file created";
+"Datei enthält keine Audiospur." = "File contains no audio track.";
+"Audio-Export fehlgeschlagen: %@" = "Audio export failed: %@";
+"STT-Modell nicht bereit" = "Speech model not ready";
+"Anlegen fehlgeschlagen: %@" = "Creating failed: %@";
+"Speichern fehlgeschlagen: %@" = "Saving failed: %@";
+"Umbenennen fehlgeschlagen: %@" = "Renaming failed: %@";
+"Löschen fehlgeschlagen: %@" = "Deleting failed: %@";
+"Konnte nicht speichern: %@" = "Could not save: %@";
+
+/* Einstellungen */
+"Allgemein" = "General";
+"Diktat" = "Dictation";
+"Berechtigungen" = "Permissions";
+"Darstellung" = "Appearance";
+"Erscheinungsbild" = "Appearance";
+"Sprache" = "Language";
+"Wirkt nach einem Neustart von Ekko." = "Takes effect after restarting Ekko.";
+"Ablage" = "Storage";
+"Transkripte-Ordner" = "Transcripts folder";
+"Im Finder zeigen" = "Show in Finder";
+"yt-dlp" = "yt-dlp";
+"nicht gefunden" = "not found";
+"Spracherkennung" = "Speech recognition";
+"WhisperKit, on-device, Sprache automatisch" = "WhisperKit, on-device, automatic language";
+"Modell nicht geladen (lädt beim ersten Diktat; Erst-Download ~2,3 GB)" = "Model not loaded (loads on first dictation; initial download ~2.3 GB)";
+"Lädt… %lld %%" = "Loading… %lld %%";
+"Bereit (entlädt sich nach 5 min Leerlauf)" = "Ready (unloads after 5 min idle)";
+"Fehler: %@" = "Error: %@";
+"Cleanup" = "Cleanup";
+"Cleanup (LLM)" = "Cleanup (LLM)";
+"Hotkey (halten = Diktat)" = "Hotkey (hold = dictate)";
+"Töne bei Start und Ende" = "Sounds at start and end";
+"Ins Englische übersetzen (translate)" = "Translate into English";
+"Engine" = "Engine";
+"Entladen" = "Unload";
+"Modell laden" = "Load model";
+
+/* Menüs */
+"Datei transkribieren…" = "Transcribe File…";
+"Meeting starten/stoppen" = "Start/Stop Meeting";
+"Letztes Diktat einfügen" = "Paste Last Dictation";
+"Einstellungen…" = "Settings…";
+"Ekko öffnen" = "Open Ekko";
+"Beenden" = "Quit";
+"Ekko ausblenden" = "Hide Ekko";
+"Ekko beenden" = "Quit Ekko";
+"Bearbeiten" = "Edit";
+"Widerrufen" = "Undo";
+"Wiederholen" = "Redo";
+"Ausschneiden" = "Cut";
+"Kopieren" = "Copy";
+"Einfügen" = "Paste";
+"Alles auswählen" = "Select All";
+"Video- oder Audio-Datei transkribieren" = "Transcribe a video or audio file";
+
+/* Hauptfenster */
+"Start" = "Home";
+"Wörterbuch" = "Dictionary";
+"Stil" = "Style";
+"Transkripte" = "Transcripts";
+"Teleprompter" = "Teleprompter";
+"Import" = "Import";
+"Bibliothek" = "Library";
+"Meeting-Aufnahme (auch: %@ doppelt tippen oder ⌘M)" = "Meeting recording (also: double-tap %@ or ⌘M)";
+"Einstellungen (⌘,)" = "Settings (⌘,)";
+"Mikro + System-Audio" = "Mic + system audio";
+"Meeting läuft" = "Meeting running";
+"Bereit" = "Ready";
+"Stopp" = "Stop";
+"Meeting aufnehmen" = "Record meeting";
+
+/* Hotkey („rechte [⌥] halten …" — Reihenfolge Seite, Kappe, Rest) */
+"rechte ⌥ (Option)" = "right ⌥ (Option)";
+"rechte ⌃ (Control)" = "right ⌃ (Control)";
+"rechte ⌘ (Command)" = "right ⌘ (Command)";
+"rechte" = "right";
+"rechte ⌥" = "right ⌥";
+"rechte ⌃" = "right ⌃";
+"rechte ⌘" = "right ⌘";
+"halten" = "(hold)";
+"halten und sprechen — Ekko schreibt dort, wo dein Cursor steht." = "— hold and speak, Ekko types wherever your cursor is.";
+"halten, sprechen, loslassen." = "— hold, speak, release.";
+
+/* Start */
+"Guten Morgen" = "Good morning";
+"Guten Tag" = "Good afternoon";
+"Guten Abend" = "Good evening";
+"seit %@" = "since %@";
+"noch keine" = "none yet";
+"Wörter" = "Words";
+"Diktate" = "Dictations";
+"heute" = "today";
+"Tag in Folge" = "Day in a row";
+"Tage in Folge" = "Days in a row";
+"mit mindestens einem Diktat" = "with at least one dictation";
+"Ø bis Text" = "Avg. to text";
+"letzte 30 Tage" = "last 30 days";
+"DIESE SITZUNG" = "THIS SESSION";
+"Klick auf ein Diktat kopiert es. Der Verlauf lebt nur, solange Ekko läuft." = "Click a dictation to copy it. The history only lasts while Ekko is running.";
+"Noch keine Diktate in dieser Sitzung" = "No dictations in this session yet";
+
+/* Wörterbuch */
+"Namen und Fachwörter, die Ekko richtig schreiben soll. Korrigierst du ein Wort nach dem Einfügen, lernt Ekko es hier dazu." = "Names and terms Ekko should spell correctly. If you correct a word after it was pasted, Ekko learns it here.";
+"So kommt es an (z. B. schieba)" = "How it comes out (e.g. schieba)";
+"So soll es stehen (z. B. Shiba)" = "How it should read (e.g. Shiba)";
+"Hinzufügen" = "Add";
+"Speichern" = "Save";
+"Abbrechen" = "Cancel";
+"Noch keine Einträge" = "No entries yet";
+"Lege oben eins an oder korrigiere ein falsch erkanntes Wort direkt nach dem Diktat." = "Add one above or correct a misrecognized word right after dictating.";
+"Löschen" = "Delete";
+
+/* Stil */
+"Ekko passt den Ton an die App an, in die du diktierst — förmlich in Mail, knapp im Chat, roh im Code." = "Ekko adapts the tone to the app you dictate into — formal in Mail, brief in chat, raw in code.";
+"Unbekannte Apps bekommen das Standard-Putzen." = "Unknown apps get the standard cleanup.";
+"Stil-Profile greifen nur mit eingeschaltetem Cleanup (Einstellungen)." = "Style profiles only apply with Cleanup turned on (Settings).";
+"Eigener Prompt (leer = Standard von »%@«)" = "Custom prompt (empty = default of “%@”)";
+"Profil entfernen" = "Remove profile";
+"App hinzufügen…" = "Add app…";
+
+/* Import */
+"Video- und Audiodateien oder Links transkribieren — läuft lokal, Ergebnis landet in Transkripte." = "Transcribe video and audio files or links — runs locally, results land in Transcripts.";
+"Datei hierher ziehen" = "Drag a file here";
+"MP4, MOV, MP3, WAV, M4A …" = "MP4, MOV, MP3, WAV, M4A …";
+"Link einfügen (YouTube, Instagram …)" = "Paste a link (YouTube, Instagram …)";
+"yt-dlp fehlt — brew install yt-dlp" = "yt-dlp missing — brew install yt-dlp";
+"Laden" = "Load";
+"Datei wählen…" = "Choose File…";
+"WARTESCHLANGE" = "QUEUE";
+"wartet" = "waiting";
+"lädt %lld %%" = "loading %lld %%";
+"transkribiert" = "transcribing";
+"→ Transkript" = "→ Transcript";
+
+/* Teleprompter */
+"· wartet auf dich" = "· waiting for you";
+"· folgt deiner Stimme" = "· following your voice";
+"Klick auf Wort = Position setzen" = "Click a word = set position";
+"1 Skript — Ekko liest mit und scrollt im Tempo deiner Stimme." = "1 script — Ekko follows along and scrolls at the pace of your voice.";
+"%lld Skripte — Ekko liest mit und scrollt im Tempo deiner Stimme." = "%lld scripts — Ekko follows along and scrolls at the pace of your voice.";
+"Neues Skript" = "New Script";
+"Lege oben mit „Neues Skript“ eins an — z. B. für eine Präsentation oder ein Video." = "Create one above with “New Script” — e.g. for a presentation or a video.";
+"Skript umbenennen" = "Rename Script";
+"»%@« löschen?" = "Delete “%@”?";
+"Kein Skript" = "No Script";
+"%lld Wörter · ~%@" = "%lld words · ~%@";
+"%lld Wörter" = "%lld words";
+"Prompter starten" = "Start Prompter";
+"Klartext, Absätze = Sinnabschnitte. Liegt als Markdown in ~/Diktate/Teleprompter/." = "Plain text, paragraphs = sections. Stored as Markdown in ~/Diktate/Teleprompter/.";
+"Titel" = "Title";
+"Umbenennen" = "Rename";
+
+/* Transkripte */
+"Transkript löschen?" = "Delete transcript?";
+"1 Transkript aus Meetings und Dateien — als Markdown in ~/Diktate." = "1 transcript from meetings and files — as Markdown in ~/Diktate.";
+"%lld Transkripte aus Meetings und Dateien — als Markdown in ~/Diktate." = "%lld transcripts from meetings and files — as Markdown in ~/Diktate.";
+"„%@“ wird endgültig gelöscht." = "“%@” will be permanently deleted.";
+"Name" = "Name";
+"Sichern" = "Save";
+"Noch keine Transkripte" = "No transcripts yet";
+"Nichts gefunden" = "Nothing found";
+"Suchen" = "Search";
+"Meeting" = "Meeting";
+"Umbenennen…" = "Rename…";
+"Kein Transkript gewählt" = "No transcript selected";
+"Links eins auswählen — Meetings und importierte Dateien landen hier." = "Select one on the left — meetings and imported files land here.";
