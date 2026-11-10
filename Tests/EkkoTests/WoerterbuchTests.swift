@@ -14,14 +14,14 @@ final class WoerterbuchTests: XCTestCase {
     }
 
     func testErsetztMitWortgrenzen() throws {
-        let wb = try mitRegeln("bürk -> BÜRCK\n")
-        XCTAssertEqual(wb.apply("Die bürk App."), "Die BÜRCK App.")
-        XCTAssertEqual(wb.apply("bürkchen"), "bürkchen")  // kein Teilwort
+        let wb = try mitRegeln("müler -> MÜLLER\n")
+        XCTAssertEqual(wb.apply("Die müler App."), "Die MÜLLER App.")
+        XCTAssertEqual(wb.apply("mülerchen"), "mülerchen")  // kein Teilwort
     }
 
     func testCaseInsensitiv() throws {
-        let wb = try mitRegeln("bürk -> BÜRCK\n")
-        XCTAssertEqual(wb.apply("Bürk und BÜRK"), "BÜRCK und BÜRCK")
+        let wb = try mitRegeln("müler -> MÜLLER\n")
+        XCTAssertEqual(wb.apply("Müler und MÜLER"), "MÜLLER und MÜLLER")
     }
 
     func testKommentareUndKaputteZeilen() throws {

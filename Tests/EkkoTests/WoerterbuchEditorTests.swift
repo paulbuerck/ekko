@@ -11,24 +11,24 @@ final class WoerterbuchEditorTests: XCTestCase {
 
     func testHinzufuegenUndLadenRoundTrip() throws {
         let (ed, datei) = tempEditor()
-        try ed.hinzufuegen(falsch: "bürk", richtig: "BÜRCK")
+        try ed.hinzufuegen(falsch: "müler", richtig: "MÜLLER")
         let neu = WoerterbuchEditor(pfad: datei)
         neu.lade()
         XCTAssertEqual(neu.regeln.count, 1)
-        XCTAssertEqual(neu.regeln[0].falsch, "bürk")
-        XCTAssertEqual(neu.regeln[0].richtig, "BÜRCK")
+        XCTAssertEqual(neu.regeln[0].falsch, "müler")
+        XCTAssertEqual(neu.regeln[0].richtig, "MÜLLER")
     }
 
     func testBearbeitenAendertRegelUndPersistiert() throws {
         let (ed, datei) = tempEditor()
-        try ed.hinzufuegen(falsch: "bürk", richtig: "BÜRK")
-        try ed.bearbeiten(index: 0, falsch: "bürck", richtig: "BÜRCK")
-        XCTAssertEqual(ed.regeln[0].falsch, "bürck")
-        XCTAssertEqual(ed.regeln[0].richtig, "BÜRCK")
+        try ed.hinzufuegen(falsch: "müler", richtig: "MÜLER")
+        try ed.bearbeiten(index: 0, falsch: "müller", richtig: "MÜLLER")
+        XCTAssertEqual(ed.regeln[0].falsch, "müller")
+        XCTAssertEqual(ed.regeln[0].richtig, "MÜLLER")
         let neu = WoerterbuchEditor(pfad: datei)
         neu.lade()
         XCTAssertEqual(neu.regeln.count, 1)
-        XCTAssertEqual(neu.regeln[0].richtig, "BÜRCK")
+        XCTAssertEqual(neu.regeln[0].richtig, "MÜLLER")
     }
 
     func testBearbeitenMitLeerWirdIgnoriert() throws {

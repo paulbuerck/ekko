@@ -141,8 +141,8 @@
 
 /* Wörterbuch */
 "Namen und Fachwörter, die Ekko richtig schreiben soll. Korrigierst du ein Wort nach dem Einfügen, lernt Ekko es hier dazu." = "Names and terms Ekko should spell correctly. If you correct a word after it was pasted, Ekko learns it here.";
-"So kommt es an (z. B. schieba)" = "How it comes out (e.g. schieba)";
-"So soll es stehen (z. B. Shiba)" = "How it should read (e.g. Shiba)";
+"So kommt es an (z. B. kioto)" = "How it comes out (e.g. kioto)";
+"So soll es stehen (z. B. Kyoto)" = "How it should read (e.g. Kyoto)";
 "Hinzufügen" = "Add";
 "Speichern" = "Save";
 "Abbrechen" = "Cancel";

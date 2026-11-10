@@ -3,7 +3,7 @@ import XCTest
 
 final class AlignerTests: XCTestCase {
     let skript = """
-    Guten Tag zusammen. Ich zeige euch heute, wie wir bei BÜRCK die
+    Guten Tag zusammen. Ich zeige euch heute, wie wir bei MÜLLER die
     Rechnungsstellung neu gedacht haben. Kein Umweg mehr über drei
     Systeme, keine Doppeleingaben.
     """
@@ -38,7 +38,7 @@ final class AlignerTests: XCTestCase {
 
     func testKeinRueckwaertssprung() {
         var a = Aligner(skript: skript)
-        a.hoere("guten tag zusammen ich zeige euch heute wie wir bei bürck")
+        a.hoere("guten tag zusammen ich zeige euch heute wie wir bei müller")
         let weit = a.position
         // Hypothese schrumpft (STT revidiert) → Position bleibt:
         a.hoere("guten tag")

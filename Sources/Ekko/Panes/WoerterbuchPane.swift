@@ -27,11 +27,11 @@ struct WoerterbuchPane: View {
 
     private var eingabe: some View {
         HStack(spacing: 10) {
-            TextField("So kommt es an (z. B. schieba)", text: $neuFalsch)
+            TextField("So kommt es an (z. B. kioto)", text: $neuFalsch)
                 .textFieldStyle(.roundedBorder)
             Image(systemName: "arrow.right")
                 .foregroundStyle(.secondary)
-            TextField("So soll es stehen (z. B. Shiba)", text: $neuRichtig)
+            TextField("So soll es stehen (z. B. Kyoto)", text: $neuRichtig)
                 .textFieldStyle(.roundedBorder)
                 .onSubmit(speichern)
             Button(editIndex == nil ? "Hinzufügen" : "Speichern", action: speichern)
