@@ -2,11 +2,11 @@
 
 On-device dictation for macOS: hold the right ⌥ key, speak, let go — the text lands wherever your cursor is. Nothing leaves your Mac.
 
-<!-- TODO: screenshot or GIF here (pill while dictating, ~1200 px wide), e.g.
-     ![Ekko dictating into a text field](docs/images/demo.gif)
-     Add the file under docs/images/ first, then uncomment the line above. -->
+![Ekko main window, Import pane](docs/images/ekko-import.png)
 
 ## Install
+
+There is no prebuilt download yet: Ekko is build-from-source for now.
 
 Requirements: macOS 26, Apple Silicon, Xcode toolchain, an Apple Development certificate (`security find-identity -p codesigning -v`). Optional: `brew install yt-dlp` for link import.
 
@@ -34,7 +34,7 @@ Ekko learns names and jargon from your corrections (`~/Diktate/woerterbuch.txt`)
 
 ## Develop
 
-Run the tests with `swift test`. How it works: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). Security reports: [SECURITY.md](SECURITY.md).
+Run the tests with `swift test --build-system native`. How it works: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). Security reports: [SECURITY.md](SECURITY.md).
 
 ## License
 
