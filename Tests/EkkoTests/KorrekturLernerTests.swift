@@ -12,15 +12,15 @@ final class KorrekturLernerTests: XCTestCase {
     }
 
     func testEinzelnesWortKorrigiert() {
-        XCTAssertEqual(regeln("Ich gehe mit schieba spazieren.",
-                              "Ich gehe mit Shiba spazieren."),
-                       ["schieba -> Shiba"])
+        XCTAssertEqual(regeln("Ich gehe mit mueller spazieren.",
+                              "Ich gehe mit Müller spazieren."),
+                       ["mueller -> Müller"])
     }
 
     func testFeldEnthaeltMehrTextDrumherum() {
-        XCTAssertEqual(regeln("Treffen mit Herrn bürk morgen",
-                              "Hallo Team,\nTreffen mit Herrn Bürck morgen\nGruß Paul"),
-                       ["bürk -> Bürck"])
+        XCTAssertEqual(regeln("Treffen mit Herrn mayer morgen",
+                              "Hallo Team,\nTreffen mit Herrn Meyer morgen\nGruß Anna"),
+                       ["mayer -> Meyer"])
     }
 
     func testZweiWorteZuEinem() {
@@ -30,9 +30,9 @@ final class KorrekturLernerTests: XCTestCase {
     }
 
     func testInterpunktionZaehltNicht() {
-        XCTAssertEqual(regeln("Das ist schieba, oder?",
-                              "Das ist Shiba, oder?"),
-                       ["schieba -> Shiba"])
+        XCTAssertEqual(regeln("Das ist mueller, oder?",
+                              "Das ist Müller, oder?"),
+                       ["mueller -> Müller"])
     }
 
     func testNurGrossKleinschreibung() {
@@ -53,7 +53,7 @@ final class KorrekturLernerTests: XCTestCase {
     }
 
     func testUmgeschriebenerSatzLerntNichts() {
-        XCTAssertEqual(regeln("Ich gehe morgen mit schieba spazieren",
+        XCTAssertEqual(regeln("Ich gehe morgen mit mueller spazieren",
                               "Spaziergang verschoben, Details folgen"), [])
     }
 
@@ -67,13 +67,13 @@ final class KorrekturLernerTests: XCTestCase {
     }
 
     func testRandWortMitEinemNachbarn() {
-        XCTAssertEqual(regeln("schieba ist müde", "Shiba ist müde"),
-                       ["schieba -> Shiba"])
+        XCTAssertEqual(regeln("mueller ist müde", "Müller ist müde"),
+                       ["mueller -> Müller"])
     }
 
     func testBekannteRegelWirdNichtNochmalVorgeschlagen() {
-        XCTAssertEqual(regeln("mit schieba raus", "mit Shiba raus",
-                              bekannt: ["schieba"]), [])
+        XCTAssertEqual(regeln("mit mueller raus", "mit Müller raus",
+                              bekannt: ["mueller"]), [])
     }
 
     func testLeererFeldtext() {
